@@ -449,7 +449,7 @@ header span {
 }
 
 .qualification__content {
-    background-image: white;
+    background-image: var(--bg-color);
     background-position: 0 0, 0 0;
     background-size: 200px, auto;
     border-radius: 20px;
