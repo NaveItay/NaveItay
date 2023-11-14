@@ -55,7 +55,10 @@ section {
     color: var(--main-color);
 }
 
-
+.active-blue {
+    color: blue;
+    /* Or any other color you prefer */
+}
 
 .header {
     position: fixed;
@@ -88,10 +91,10 @@ section {
     height: 100%;
     top: 0;
     left: -100%;
-    background: linear-gradient(90deg, 
-        transparent, 
-        rgba(0, 0, 0, 0.2), 
-        transparent);
+    background: linear-gradient(90deg,
+            transparent,
+            rgba(0, 0, 0, 0.2),
+            transparent);
     transition: 1.5s;
     z-index: -1;
 }
@@ -175,6 +178,7 @@ header span {
     color: var(--main-color);
     font-weight: 600;
 }
+
 #menu-icon {
     font-size: 35px;
     color: var(--text-color);
@@ -327,12 +331,12 @@ header span {
 
 .portrait {
     filter: grayscale(100%);
-    mix-blend-mode:normal;
+    mix-blend-mode: normal;
 }
 
-.portrait2{
+.portrait2 {
     filter: grayscale(100%);
-    mix-blend-mode:multiply;    
+    mix-blend-mode: multiply;
     opacity: 0.3;
 }
 
@@ -530,7 +534,7 @@ header span {
 }
 
 .filterDiv {
-    float:left;
+    float: left;
     width: 24%;
     overflow: hidden;
     color: var(--text-color);
@@ -588,7 +592,7 @@ header span {
 
 
 .modal {
-    display: none;    
+    display: none;
     position: fixed;
     z-index: 1;
     padding-top: 200px;
@@ -639,7 +643,7 @@ header span {
 }
 
 .p-justify-center {
-    text-align:justify;
+    text-align: justify;
 }
 
 #construction {
@@ -984,6 +988,7 @@ header span {
     .header {
         padding: 0.5rem 4rem;
     }
+
     .navbar a {
         margin-left: 1.2rem;
     }
@@ -1104,6 +1109,7 @@ header span {
     .modal-content img {
         width: 80%;
     }
+
     .navbar {
         position: absolute;
         top: 100%;
@@ -1118,7 +1124,7 @@ header span {
         transition: 0.5s ease;
     }
 
-    
+
     .navbar.showNav {
         height: 21rem;
         opacity: 1;
@@ -1223,13 +1229,14 @@ header span {
         font-size: 1.8rem;
     }
 
-    #intro-text{
+    #intro-text {
         font-size: 1.8rem;
     }
+
     .modal-content img {
         width: 100%;
     }
-    
+
     .filterDiv {
         width: 49%;
     }
@@ -1275,6 +1282,7 @@ header span {
     .skills__header h3 {
         font-size: 1rem;
     }
+
     .header .logo {
         font-size: 1.5rem;
     }
