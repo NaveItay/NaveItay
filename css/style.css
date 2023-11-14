@@ -11,14 +11,14 @@
 }
 
 :root {
-    --bg-color: #151515;
-    --second-bg-color: #303030;
-    --second-bg-color-transparent: #30303030;
+    --bg-color: #ffffff; /* white background */
+    --second-bg-color: #e0e0e0; /* lighter gray for secondary backgrounds */
+    --second-bg-color-transparent: #e0e0e030; /* lighter gray with transparency */
 
-    --text-color: #F7F7F7;
+    --text-color: #0000ff; /* blue text */
 
-    --main-color: #618A2C;
-    --second-color: #ec4f1f;
+    --main-color: #0000ff; /* main blue color */
+    --second-color: #007bff; /* secondary blue color */
 
 
     --big-font: 5rem;
