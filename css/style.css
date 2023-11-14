@@ -199,7 +199,7 @@ header span {
     height: 100%;
 
     justify-content: space-around;
-    /*border: #618A2C dashed 2px;*/
+    border: #5a56eb dashed 2px;
 
 }
 .bottom-border{
@@ -229,7 +229,7 @@ header span {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /*border: #618A2C dashed 2px;*/
+    border: #5a56eb dashed 2px;
 
 }
 
@@ -327,7 +327,7 @@ header span {
     display: flex;
     flex-direction: column;
     /*justify-content: center;*/
-    /*border: #618A2C dashed 2px;*/
+    border: #5a56eb dashed 2px;
     width: 100%;
 }
 
