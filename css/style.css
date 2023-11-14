@@ -328,33 +328,29 @@ header span {
     filter: url("#goo");
 }
 
-.about img {
-    width: 35rem;
-    border-radius: 100% 50% 30% 40%;
-    outline: 5px solid rgba(0, 0, 0, 0.5);
+#rect-background {
+    fill: var(--main-color);
 }
+
+
+.portrait {
+    filter: grayscale(100%);
+    mix-blend-mode:normal;
+}
+
+.portrait2{
+    filter: grayscale(100%);
+    mix-blend-mode:multiply;    
+    opacity: 0.3;
+}
+
 
 .about .container-upper .container-left {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    border: 2px dashed rgba(90, 86, 235, 0);
-    /* Transparent border */
     width: 100%;
 }
 
-.about .container-about-bottom {
-    display: flex;
-    /*border: 1px magenta dashed;*/
-}
-
-.about .container-about-bottom .container-left {
-    background-color: var(--main-color);
-    width: 50px;
-    height: 100%;
-    filter: blur(40px);
-    opacity: 0.9;
-}
 
 .about .container-right {
     width: 100%;
@@ -362,6 +358,7 @@ header span {
     display: flex;
     flex-direction: column;
 }
+
 
 .about .container-right h2 {
     margin-bottom: 20px;
@@ -395,7 +392,6 @@ header span {
     display: flex;
     justify-content: center;
 }
-
 /* ==================== EXPERIENCE SECTION ==================== */
 
 .qualification__tabs {

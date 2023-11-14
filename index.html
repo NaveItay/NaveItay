@@ -118,31 +118,48 @@
 
                     <!-- SVG with the goo effect filter -->
                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                    viewBox="0 0 800 800" id="loader">
-                    <defs>
-                        <filter id="goo">
-                            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-                            <feColorMatrix in="blur" mode="matrix"
-                                values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
-                            <feBlend in="SourceGraphic" in2="goo" />
-                        </filter>
-                    </defs>
-                
-                    <!-- Apply the goo effect filter to the circles -->
-                    <g filter="url(#goo)">
-                        <circle class="blob" cx="550" cy="170" r="150" fill="#0000ff"/>
-                        <circle class="blob" cx="400" cy="480" r="280" fill="#0000ff"/>
-                        <circle class="blob" cx="600" cy="230" r="35" fill="#0000ff"/>
-                        <circle class="blob" cx="150" cy="620" r="105" fill="#0000ff"/>
-                        <circle class="blob" cx="650" cy="680" r="15" fill="#0000ff"/>
-                    </g>
-                
-                    <!-- Place the image above the circles -->
-                    <image xlink:href="img/about-full.png" width="800" height="800"/>   
-                </svg>
-                
-                
+                        viewBox="0 0 800 800" id="loader">
+                        <defs>
+                            <clipPath id="clipPath4">
+                                <circle class="blob" cx="350" cy="170" r="150"
+                                    transform="rotate(0) translate(0, 0) rotate(0)" />
+                                <circle class="blob" cx="400" cy="480" r="280"
+                                    transform="rotate(0) translate(0, 0) rotate(0)" />
+                                <circle class="blob" cx="600" cy="230" r="35"
+                                    transform="rotate(0) translate(0, 0) rotate(0)" />
+                                <circle class="blob" cx="150" cy="620" r="105"
+                                    transform="rotate(0) translate(0, 0) rotate(0)" />
+                                <circle class="blob" cx="650" cy="680" r="15"
+                                    transform="rotate(0) translate(0, 0) rotate(0)" />
+                            </clipPath>
+                            <filter id="goo">
+                                <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+                                <feColorMatrix in="blur" mode="matrix"
+                                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                                <feBlend in2="goo" in="SourceGraphic" result="mix" />
+                            </filter>
+                            <pattern id="Pattern" x="0" y="0" width="0.25" height="0.25">
+                                <image xlink:href="img/noise.png"></image>
+                            </pattern>
+                        </defs>
 
+
+                        <!-- Apply the clipPath to this group -->
+                        <g class="blobs-filter">
+                            <g clip-path="url(#clipPath4)">
+                                <rect id="rect-background" width="800" height="900" />
+                                <rect fill="url(#Pattern)" width="800" height="900" />
+                                <image class="portrait2 blob" x="-2%" y="-38%" width=100% xlink:href="img/about.png"
+                                    transform="rotate(0) translate(0, 0) rotate(0)"></image>
+                                <image class="portrait" x="0%" y="-40%" width=100% xlink:href="img/about.png">
+                                </image>
+                            </g>
+                        </g>
+
+                        <image class="portrait" clip-path="url(#clipPath4)" x="0%" y="-40%" width=100%
+                            xlink:href="img/about.png"></image>
+                    </svg>
+                
                 </div>
                 <div class="container-right">
                     <h2>My name is <span class="second-color">Itay<i class='bx bx-wink-smile'></i></span></h2>
