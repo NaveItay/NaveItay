@@ -27,7 +27,7 @@
     border-radius: 50%;
     /*border: solid var(--second-color) 2px;*/
     transform: translate(-50%, -50%);
-    box-shadow: 0 0 120px 20px var(--second-color); 
+    box-shadow: 0 0 120px 20px #ffd10c; 
     z-index: -1;
     opacity: 0.6;
 }
