@@ -1,6 +1,6 @@
 // Typing animation
 const typed = new Typed(".typing-text", {
-    strings: ["Embedded Software Engineer", "Firmware Engineer"],
+    strings: ["Embedded Engineer", "Firmware Engineer"],
     typeSpeed: 150,
     backSpeed: 150,
     loop: true
@@ -182,13 +182,6 @@ function closeMenu(menus, arrows) {
     })
 };
 
-
-// Scroll button
-// function scrollTop() {
-//     let scrollTop = document.getElementById('scroll-top');
-//     // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
-//     if (this.scrollY >= 200) scrollTop.classList.add('show-scroll'); else scrollTop.classList.remove('show-scroll')
-// }
 // Scroll button
 function scrollTop() {
     let scrollTopButton = document.getElementById('scroll-top');
