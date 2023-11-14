@@ -92,15 +92,15 @@ function removeClass(element, name) {
 }
 
 // Add active class to the current button (highlight it)
-const btnContainer = document.getElementById("myBtnContainer");
-const btns = btnContainer.querySelectorAll('.btn');
-btns.forEach(btn => {
-    btn.addEventListener('click', () => {
-        const currentBtn = document.querySelector(".btn-active");
-        currentBtn.classList.remove('btn-active');
-        btn.classList.add('btn-active');
-    })
-});
+// const btnContainer = document.getElementById("myBtnContainer");
+// const btns = btnContainer.querySelectorAll('.btn');
+// btns.forEach(btn => {
+//     btn.addEventListener('click', () => {
+//         const currentBtn = document.querySelector(".btn-active");
+//         currentBtn.classList.remove('btn-active');
+//         btn.classList.add('btn-active');
+//     })
+// });
 
 
 
