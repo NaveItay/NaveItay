@@ -37,7 +37,7 @@
     top: -128px;
     left: 50%;
     width: 50px;
-    background-color: var(--main-color);
+    background-color: #000000;
     height: 50px;
     /*border: solid var(--main-color) 5px;*/
     opacity: 0.6;
