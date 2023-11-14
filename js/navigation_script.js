@@ -34,11 +34,11 @@ function scrollActive() {
 
         if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
             console.log('Activating:', sectionId);
-            document.querySelector('.nav-menu-btn[href="#' + sectionId + '"]').classList.add('active-blue'); 
+            document.querySelector('.nav-menu-btn[href="#' + sectionId + '"]').classList.add('active'); 
             scrollTopElement.style.display = 'block';
         } else {
             console.log('Deactivating:', sectionId);
-            document.querySelector('.nav-menu-btn[href="#' + sectionId + '"]').classList.remove('active-blue'); 
+            document.querySelector('.nav-menu-btn[href="#' + sectionId + '"]').classList.remove('active'); 
             scrollTopElement.style.display = 'none';
         }
     });
