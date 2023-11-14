@@ -322,10 +322,9 @@ header span {
 /* ==================== About ==================== */
 
 .about img {
-    width: 20rem;
-    border-radius: 50% 50% 30% 40%;
+    width: 35rem;
+    border-radius: 100% 50% 30% 40%;
     outline: 5px solid rgba(0, 0, 0, 0.5);
-
 }
 
 .about .container-upper .container-left {
