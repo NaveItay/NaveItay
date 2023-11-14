@@ -11,14 +11,20 @@
 }
 
 :root {
-    --bg-color: #ffffff; /* white background */
-    --second-bg-color: #e0e0e0; /* lighter gray for secondary backgrounds */
-    --second-bg-color-transparent: #e0e0e030; /* lighter gray with transparency */
+    --bg-color: #ffffff;
+    /* white background */
+    --second-bg-color: #e0e0e0;
+    /* lighter gray for secondary backgrounds */
+    --second-bg-color-transparent: #e0e0e030;
+    /* lighter gray with transparency */
 
-    --text-color: #3a3a47; /* Black text */
+    --text-color: #3a3a47;
+    /* Black text */
 
-    --main-color: #0000ff; /* main blue color */
-    --second-color: #007bff; /* secondary blue color */
+    --main-color: #0000ff;
+    /* main blue color */
+    --second-color: #007bff;
+    /* secondary blue color */
 
 
     --big-font: 5rem;
@@ -80,7 +86,7 @@ header.sticky {
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     z-index: 1;
-    
+
 }
 
 header,
@@ -197,14 +203,15 @@ header span {
     display: flex;
     flex-direction: column;
     height: 100%;
-
     justify-content: space-around;
-    border: #5a56eb dashed 2px;
-
+    border: 2px dashed rgba(90, 86, 235, 0);
+    /* The alpha value is 0 for transparency */
 }
-.bottom-border{
+
+.bottom-border {
     border-bottom: 1px var(--second-bg-color) solid;
 }
+
 .container-upper {
     display: flex;
     width: 100%;
@@ -755,9 +762,10 @@ header span {
     row-gap: 2px;
     padding-left: 2.5rem;
 }
+
 .skills__list li {
     line-height: 23px;
-    list-style:circle;
+    list-style: circle;
     font-weight: 200;
 }
 
@@ -1033,7 +1041,7 @@ header span {
 
 
     }
-    
+
 
     .navlist:before {
         border-bottom: var(--second-bg-color) 10px solid;
@@ -1137,9 +1145,10 @@ header span {
         flex-direction: column;
 
         /*grid-template-columns: none;*/
-        grid-template-columns:none;
+        grid-template-columns: none;
         gap: 0px;
     }
+
     .skills__container .skill-column {
         margin-bottom: 0;
         border: #ec4f1f solid 2px;
@@ -1207,10 +1216,11 @@ header span {
         max-height: 140px;
     }
 
-.section__title {
-    letter-spacing: 8px;
-    font-size: 3.5rem;
-}
+    .section__title {
+        letter-spacing: 8px;
+        font-size: 3.5rem;
+    }
+
     .filterDiv .overlay {
         opacity: 1;
         height: 50%;
