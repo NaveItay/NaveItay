@@ -24,21 +24,20 @@ const sections = document.querySelectorAll('section[id]')
 
 function scrollActive() {
     const scrollY = window.scrollY;
+    const scrollTopElement = document.getElementById('scroll-top'); // Get the scroll-top element
 
     sections.forEach(current => {
         const sectionHeight = current.offsetHeight;
         const sectionTop = current.offsetTop - 70;
-        const sectionId = current.getAttribute('id');
 
         if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-            document.querySelector('.navbar a[href*=' + sectionId + ']').classList.add('active');
+            scrollTopElement.style.display = 'block'; // Show the scroll-top element
         } else {
-
-            document.querySelector('.navbar a[href*=' + sectionId + ']').classList.remove('active');
+            scrollTopElement.style.display = 'none'; // Hide the scroll-top element
         };
-
     });
 };
+
 
 window.addEventListener('scroll', scrollActive)
 
