@@ -64,7 +64,7 @@ header {
     right: 0;
     z-index: 1000;
     background-size: 200px 200px;
-    background: rgba(0,0,0,.1);
+    background: rgba(0, 0, 0, .1);
     backdrop-filter: blur(5px);
     /*border-bottom: 1px solid transparent;*/
     transition: all 0.45s;
@@ -237,7 +237,8 @@ header span {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 2px dashed rgba(90, 86, 235, 0); /* Transparent border */
+    border: 2px dashed rgba(90, 86, 235, 0);
+    /* Transparent border */
 }
 
 .home .container-left span {
@@ -332,7 +333,8 @@ header span {
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
-    border: 2px dashed rgba(90, 86, 235, 0); /* Transparent border */
+    border: 2px dashed rgba(90, 86, 235, 0);
+    /* Transparent border */
     width: 100%;
 }
 
@@ -427,10 +429,9 @@ header span {
 }
 
 .qualification__title {
-
     font-size: 1.2rem;
     font-weight: 600;
-    color: var(--second-color);
+    color: var(--main-color);
     margin-bottom: 15px;
 }
 
@@ -443,13 +444,13 @@ header span {
 .qualification__calendar {
     text-align: center;
     font-size: 1.2rem;
-    color: var(--bg-color);
+    color: #ffffff;
     background-image: url(/img/noise.png);
     background-size: 200px 200px;
     margin-bottom: 15px;
     padding: 0 10px;
     border-radius: 20px;
-    background-color: var(--main-color);
+    background-color: #000000;
 }
 
 .qualification__content {
@@ -467,7 +468,7 @@ header span {
     display: inline-block;
     width: 13px;
     height: 13px;
-    background-color: var(--main-color);
+    background-color: #000000;
     border-radius: 50%;
 }
 
@@ -475,7 +476,7 @@ header span {
     display: block;
     width: 2px;
     height: 100%;
-    background-color: var(--main-color);
+    background-color: #000000;
     transform: translate(6px, -7px);
 }
 
