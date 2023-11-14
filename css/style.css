@@ -323,6 +323,11 @@ header span {
 
 /* ==================== About ==================== */
 
+.blobs-filter {
+    -webkit-filter: url("#goo");
+    filter: url("#goo");
+}
+
 .about img {
     width: 35rem;
     border-radius: 100% 50% 30% 40%;
