@@ -21,24 +21,29 @@ const sections = document.querySelectorAll('section[id]');
 
 function scrollActive() {
     const scrollY = window.scrollY;
-    const scrollTopElement = document.getElementById('scroll-top'); // Get the scroll-top element
+    const scrollTopElement = document.getElementById('scroll-top'); 
 
-    console.log(window.scrollY)
+    console.log('Scroll Position:', scrollY);
 
     sections.forEach(current => {
         const sectionHeight = current.offsetHeight;
         const sectionTop = current.offsetTop - 70;
-        sectionId = current.getAttribute('id');
+        const sectionId = current.getAttribute('id');
+
+        console.log('Section:', sectionId, 'Top:', sectionTop, 'Height:', sectionHeight);
 
         if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-            document.querySelector('.nav-menu-btn[href*=' + sectionId + ']').classList.add('active-blue'); // Add the active class
-            scrollTopElement.style.display = 'block'; // Show the scroll-top element
+            console.log('Activating:', sectionId);
+            document.querySelector('.nav-menu-btn[href*=' + sectionId + ']').classList.add('active-blue'); 
+            scrollTopElement.style.display = 'block';
         } else {
-            document.querySelector('.nav-menu-btn[href*=' + sectionId + ']').classList.remove('active-blue'); // Remove the active class
-            scrollTopElement.style.display = 'none'; // Hide the scroll-top element
+            console.log('Deactivating:', sectionId);
+            document.querySelector('.nav-menu-btn[href*=' + sectionId + ']').classList.remove('active-blue'); 
+            scrollTopElement.style.display = 'none';
         }
     });
 };
+
 
 window.addEventListener('scroll', scrollActive)
 
