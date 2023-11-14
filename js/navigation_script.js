@@ -23,6 +23,8 @@ function scrollActive() {
     const scrollY = window.scrollY;
     const scrollTopElement = document.getElementById('scroll-top'); // Get the scroll-top element
 
+    console.log(window.scrollY)
+
     sections.forEach(current => {
         const sectionHeight = current.offsetHeight;
         const sectionTop = current.offsetTop - 70;
