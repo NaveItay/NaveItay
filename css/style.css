@@ -449,9 +449,7 @@ header span {
 }
 
 .qualification__content {
-    background-image:
-        url(/img/noise.png),
-        linear-gradient(to right, #303030A0, #ff7f5020);
+    background-image: white;
     background-position: 0 0, 0 0;
     background-size: 200px, auto;
     border-radius: 20px;
