@@ -106,7 +106,17 @@
             <h2 class="section__title">About</h2>
             <div class="container-upper">
                 <div class="container-left">
-                    <img src="img/about.png" alt="Itay Nave">
+                    <!-- SVG with the goo effect filter -->
+                    <svg width="100%" height="100%" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <defs>
+                            <filter id="goo">
+                                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                                <feBlend in="SourceGraphic" in2="goo" />
+                            </filter>
+                        </defs>
+                        <image xlink:href="img/about.png" width="100%" height="100%" filter="url(#goo)" />
+                    </svg>
                 </div>
                 <div class="container-right">
                     <h2>My name is <span class="second-color">Itay<i class='bx bx-wink-smile'></i></span></h2>
