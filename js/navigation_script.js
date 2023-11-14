@@ -1,3 +1,5 @@
+// Navigation BAR
+
 const menuIcon = document.querySelector(".menuIcon");
 const navBar = document.querySelector(".navbar");
 const navBtns = document.querySelectorAll(".nav-menu-btn");
