@@ -1161,11 +1161,12 @@ header span {
 
     .skills__container {
         display: flex;
-        flex-direction: column;
+        justify-content: space-between; /* Aligns the columns to the left and right */
+        gap: 20px; /* Adjust this value as needed */
+    }
 
-        /*grid-template-columns: none;*/
-        grid-template-columns: none;
-        gap: 0px;
+    .skills__column {
+        flex: 1; /* Ensures both columns take equal width */
     }
 
     .skills__container .skill-column {
