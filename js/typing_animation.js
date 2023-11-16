@@ -1,6 +1,6 @@
 // Typing animation
 const typed = new Typed(".typing-text", {
-    strings: ["Embedded", "Firmware"],
+    strings: ["an Embedded", "a Firmware"],
     typeSpeed: 150,
     backSpeed: 150,
     loop: true
