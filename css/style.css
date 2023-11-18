@@ -392,6 +392,7 @@ header span {
 /* ==================== EXPERIENCE SECTION ==================== */
 
 .qualification__logo {
+    background-color: white;
     width: 100px;
     height: 100px;
     object-fit: contain; /* This ensures that the image's aspect ratio is maintained */
