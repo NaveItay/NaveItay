@@ -391,6 +391,12 @@ header span {
 
 /* ==================== EXPERIENCE SECTION ==================== */
 
+.qualification__logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain; /* This ensures that the image's aspect ratio is maintained */
+}
+
 .qualification__tabs {
     display: flex;
     justify-content: center;
