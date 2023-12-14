@@ -1336,14 +1336,16 @@ header span {
 /* Default scrollbar styling for mobile devices */
 /* This will be applied by default and will cover mobile devices */
 
-/* Custom scrollbar styling for screens wider than 410px (desktops and tablets) */
+/* Hide scrollbar for screens narrower than 410px (primarily mobile devices) */
 @media screen and (max-width: 410px) {
-    /* Apply default scrollbar styles for mobile devices */
-    /* No additional styles needed here as it will use browser defaults */
+    /* Hides the scrollbar, but also disables scrolling */
+    body {
+        overflow: hidden;
+    }
 }
 
-/* The following styles will be applied to screens wider than 410px */
-/* Total scrollbar styling */
+/* Custom scrollbar styling for screens wider than 410px (desktops and tablets) */
+/* These styles will be applied by default to screens wider than 410px */
 ::-webkit-scrollbar {
     width: 12px; /* Adjust the width of the scrollbar */
 }
