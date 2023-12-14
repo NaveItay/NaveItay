@@ -1337,8 +1337,8 @@ header span {
 /* This will be applied by default and will cover mobile devices */
 
 /* Custom scrollbar styling for desktop */
-@media screen and (min-width: 410) {
-    /* Adjust this min-width value based on your breakpoint for desktop view */
+@media (max-width: 410) {
+    /* Adjust this max-width value based on your breakpoint for desktop view */
 
     /* Total scrollbar styling */
     ::-webkit-scrollbar {
