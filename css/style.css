@@ -773,18 +773,21 @@ header span {
 }
 
 .skills__open .skills__list {
-    max-height: 500px; /* Set a max-height that can contain the list when open */
-    /* If the content might vary in height, you could use a larger value or calculate it with JS */
+    max-height: 500px; /* Adjust as necessary to fit content */
+    padding-top: 10px; /* Add padding for visual space when opened */
+    padding-bottom: 10px; /* Add padding for visual space when opened */
 }
 
 .skills__close .skills__list {
-    display: none;
+    max-height: 0; /* Set max-height to 0 for closed state */
+    padding-top: 0; /* Remove padding when closed */
+    padding-bottom: 0; /* Remove padding when closed */
 }
 
 .skills__list {
-    max-height: 0; /* Start with max-height 0 for closed state */
-    overflow: hidden; /* Prevents content from overflowing during transition */
-    transition: max-height 0.5s ease-in-out; /* Smooth transition for max-height */
+    overflow: hidden; /* Hide the overflow content */
+    transition: max-height 0.5s ease-in-out, padding-top 0.5s ease-in-out, padding-bottom 0.5s ease-in-out; /* Transition for smooth opening/closing */
+    /* ... other styles ... */
 }
 
 .skills__list li {
