@@ -790,10 +790,28 @@ header span {
     /* ... other styles ... */
 }
 
+.skills__list ul {
+  list-style-type: none; /* Removes default list styling */
+  padding-left: 0; /* Removes default padding */
+}
+
 .skills__list li {
-    line-height: 23px;
-    list-style: circle;
-    font-weight: 200;
+  line-height: 23px;
+  padding-left: 24px; /* Adds space for custom bullet */
+  position: relative; /* Needed for absolute positioning of pseudo-element */
+  font-weight: 200;
+}
+
+.skills__list li::before {
+  content: '';
+  width: 8px; /* Size of the circle */
+  height: 8px; /* Size of the circle */
+  background-color: var(--second-color); /* Color of the circle */
+  border-radius: 50%; /* Makes it circular */
+  position: absolute;
+  left: 0; /* Align to the left of the list item */
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .skills__icon {
