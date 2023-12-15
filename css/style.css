@@ -773,8 +773,8 @@ header span {
 }
 
 .skills__open .skills__list {
-    height: max-content;
-    margin-top: 15px;
+    max-height: 500px; /* Set a max-height that can contain the list when open */
+    /* If the content might vary in height, you could use a larger value or calculate it with JS */
 }
 
 .skills__close .skills__list {
@@ -782,8 +782,9 @@ header span {
 }
 
 .skills__list {
-    row-gap: 2px;
-    padding-left: 2.5rem;
+    max-height: 0; /* Start with max-height 0 for closed state */
+    overflow: hidden; /* Prevents content from overflowing during transition */
+    transition: max-height 0.5s ease-in-out; /* Smooth transition for max-height */
 }
 
 .skills__list li {
@@ -810,6 +811,7 @@ header span {
 
 .skills__content {
     margin: 20px 20px;
+    overflow: hidden; /* Make sure overflow content is not visible during transition */
 }
 
 
