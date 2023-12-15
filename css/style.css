@@ -829,12 +829,10 @@ header span {
     transition: 0.4s;
 }
 
-
 .skills__content {
     margin: 20px 20px;
     overflow: hidden; /* Make sure overflow content is not visible during transition */
 }
-
 
 
 /* ===================== CONTACT ===================== */
@@ -859,7 +857,6 @@ header span {
     margin-right: 5px;
 }
 
-
 .contact-content .left-side::before {
     content: "";
     position: absolute;
@@ -878,7 +875,6 @@ header span {
     /*border: dashed white 1px;*/
     width: 180px;
 }
-
 
 .contact-content .left-side .details i {
     font-size: 30px;
@@ -958,7 +954,6 @@ header span {
     margin-top: 12px;
 }
 
-
 .contact-content .right-side .button input[type="submit"] {
     color: var(--main-color);
     font-size: 18px;
@@ -977,7 +972,6 @@ header span {
     color: var(--bg-color);
     transform: scale(1.1);
 }
-
 
 
 /*END CONTACT*/
