@@ -791,27 +791,27 @@ header span {
 }
 
 .skills__list ul {
-  list-style-type: none; /* Removes default list styling */
-  padding-left: 0; /* Removes default padding */
+    list-style-type: none;
+    padding-left: 0; /* Adjust as needed */
+    margin: 0; /* Reset any default margins */
 }
 
 .skills__list li {
-  line-height: 23px;
-  padding-left: 24px; /* Adds space for custom bullet */
-  position: relative; /* Needed for absolute positioning of pseudo-element */
-  font-weight: 200;
+    position: relative;
+    padding-left: 24px; /* Provide space for the hollow circle */
+    margin-bottom: 10px; /* Adjust space between list items as needed */
 }
 
 .skills__list li::before {
-  content: '';
-  width: 8px; /* Size of the circle */
-  height: 8px; /* Size of the circle */
-  background-color: var(--second-color); /* Color of the circle */
-  border-radius: 50%; /* Makes it circular */
-  position: absolute;
-  left: 0; /* Align to the left of the list item */
-  top: 50%;
-  transform: translateY(-50%);
+    content: '';
+    width: 8px;
+    height: 8px;
+    border: 2px solid;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .skills__icon {
