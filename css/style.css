@@ -804,8 +804,8 @@ header span {
 
 .skills__list li::before {
     content: '';
-    width: 8px;
-    height: 8px;
+    width: 4px;
+    height: 0px;
     border: 2px solid;
     border-radius: 50%;
     position: absolute;
